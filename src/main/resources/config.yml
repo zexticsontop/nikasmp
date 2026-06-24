@@ -1,0 +1,38 @@
+# LegendarySMP Configuration
+
+# List of weapon IDs that have been crafted this world.
+# Remove an entry (or use /legendary reset <weapon>) to allow re-crafting.
+crafted-weapons: []
+
+# Set to true to allow any player to craft a legendary weapon even if it already exists.
+# Recommended: false for competitive SMPs.
+allow-recrafting: false
+
+# Dragon Egg settings
+dragon-egg:
+  # Grant Speed I to the egg holder
+  speed-buff: true
+  # Broadcast egg holder location to all players every N minutes (0 = disabled)
+  # NOTE: Set to 0 - owner identity kept secret per server config
+  broadcast-interval: 0
+
+# Weapon-specific settings
+weapons:
+  soulreaper:
+    regen-duration: 100       # Ticks (100 = 5 seconds)
+    crit-bonus: 0.10          # 10% extra damage on crit
+  twin-kings:
+    rage-stacks-max: 5
+    rage-damage-bonus: 0.50   # 50% extra at max stacks
+    rage-expire-ms: 15000     # 15 seconds
+  frostfang:
+    freeze-crits-needed: 3
+    freeze-duration: 60       # Ticks (60 = 3 seconds)
+  eclipse-blade:
+    dash-distance: 6
+    dash-bonus: 0.30          # 30% damage after dash
+    dash-cooldown-ms: 20000   # 20 seconds
+  titanbreaker:
+    shield-break-cooldown: 100  # Ticks of shield cooldown applied to victim
+    charged-threshold: 0.9      # Attack cooldown % needed for charged hit
+    knockback-multiplier: 3.0

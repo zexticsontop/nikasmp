@@ -1,0 +1,21 @@
+name: LegendarySMP
+version: 1.0.0
+main: com.legendarysmp.LegendarySMP
+api-version: "1.21"
+description: "Legendary Weapons SMP - 5 unique weapons, Dragon Egg PvP objective"
+authors: [Zex]
+
+commands:
+  legendary:
+    description: Admin commands for legendary items
+    usage: /legendary <give|status|reset|egg> [args]
+    permission: legendarysmp.admin
+    aliases: [leg, lsmp]
+
+permissions:
+  legendarysmp.admin:
+    description: Full admin access to LegendarySMP
+    default: op
+  legendarysmp.craft:
+    description: Ability to craft legendary weapons
+    default: true
